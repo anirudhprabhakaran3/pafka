@@ -1,0 +1,28 @@
+meta {
+  name: Register Topic
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/topics/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "topic_name": "test_topic",
+    "partition_id": 0
+  }
+}
+
+body:multipart-form {
+  topic_name: test_topic
+  partition_id: 0
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

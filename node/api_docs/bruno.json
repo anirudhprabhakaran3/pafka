@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Pafka Node API Docs",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
