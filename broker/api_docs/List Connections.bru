@@ -1,11 +1,11 @@
 meta {
-  name: Health Check
+  name: List Connections
   type: http
-  seq: 1
+  seq: 2
 }
 
 get {
-  url: http://localhost:8000/health
+  url: http://localhost:8000/connections
   body: none
   auth: inherit
 }

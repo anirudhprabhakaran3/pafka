@@ -1,0 +1,23 @@
+meta {
+  name: Register Connection
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/connections/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "node_identifier": "node-1",
+    "node_ip": "localhost:5567"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
